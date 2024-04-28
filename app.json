@@ -1,0 +1,57 @@
+
+{
+  "name": "Chat-Gpt",
+  "description": "A Telegram open-ai Chatgpt bot.",
+  "logo": "https://te.legra.ph/file/9fa2101b77407dbec7d31.jpg",
+  "keywords": [
+    "telegram", "chatgpt",
+    "python",
+    "pyrogram",
+    "Noob-Mukesh"   
+  ],
+  "stack": "heroku-20",
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "15"
+      }
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": { "description": "telegram bot token here",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Owner id OF TELEGRAM ",
+      "required": true
+    },
+    "SUPPORT_GRP": {
+      "description": "Your Support Group without @",
+      "required": true
+    },
+    "STKR": {
+      "description": "Sticker for start", 
+      "required": true
+    },
+    "START_IMG": {
+      "description": "Start Image For Bot.",
+      "required": true
+    },
+    "UPDATE_CHNL": {
+      "description": "Your Updates Channel without @",
+      "required": true
+    },
+    "API_ID": { "description": "telegram api id here",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "telegram api hash here",
+      "required": true
+    },
+    "MONGO_DB_URI":{
+    "description":"enter mongo url here",
+    "required":true
+  }},
+  "repository": "https://github.com/noob-mukesh/Chatgpt-bot"
+}
